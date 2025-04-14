@@ -1,0 +1,33 @@
+# Protect the installation directory
+# If installation is complete, deny access to all files
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Check if installation is complete (installed.lock exists)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/install/installed.lock -f
+    RewriteRule ^(.*)$ - [F,L]
+    
+    # Redirect all requests to index.php if not a file or directory
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [L]
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "^(functions\.php|installed\.lock)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# PHP settings
+<IfModule mod_php7.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log /path/to/error.log
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes

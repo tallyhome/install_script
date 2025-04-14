@@ -1,0 +1,98 @@
+<?php
+/**
+ * French language file
+ */
+return [
+    'installation_title' => 'Installation d\'AdminLicence',
+    
+    // Step 1 - License verification
+    'license_verification' => 'Vérification de licence',
+    'license_key' => 'Clé de licence',
+    'verify' => 'Vérifier',
+    'next' => 'Suivant',
+    'license_valid' => 'Licence valide',
+    'license_invalid' => 'Licence invalide',
+    'license_expired' => 'Licence expirée',
+    'license_revoked' => 'Licence révoquée',
+    'license_suspended' => 'Licence suspendue',
+    'expiry_date' => 'Date d\'expiration',
+    'license_info' => 'Veuillez entrer votre clé de licence pour continuer l\'installation',
+    'license_api_info' => 'API de licence',
+    'license_key_info' => 'Entrez la clé de licence fournie lors de votre achat',
+    'license_details' => 'Détails de la licence',
+    'status' => 'Statut',
+    'secure_code' => 'Code sécurisé',
+    'valid_until' => 'Valide jusqu\'au',
+    'not_available' => 'Non disponible',
+    
+    // Step 2 - Project detection
+    'project_detection' => 'Détection & Préparation du Projet',
+    'project_type' => 'Type de projet',
+    'php_project' => 'Projet PHP simple',
+    'laravel_project' => 'Projet Laravel',
+    'react_project' => 'Projet React',
+    'env_file' => 'Fichier .env',
+    'env_file_exists' => 'Fichier .env existant',
+    'env_file_missing' => 'Fichier .env manquant',
+    'vendor_directory' => 'Répertoire vendor/',
+    'vendor_exists' => 'Répertoire vendor/ existant',
+    'vendor_missing' => 'Répertoire vendor/ manquant',
+    'vendor_installed' => 'Répertoire vendor/ installé',
+    'vendor_not_needed' => 'Répertoire vendor/ non nécessaire pour ce type de projet',
+    'env_not_needed' => 'Fichier .env non nécessaire pour ce type de projet',
+    'creating_env' => 'Création du fichier .env',
+    'run_composer' => 'Veuillez exécuter "composer install" pour installer les dépendances',
+    'complete' => 'terminée',
+    'with_warnings' => 'avec des avertissements',
+    
+    // Step 3 - Database configuration
+    'database_configuration' => 'Configuration de la base de données',
+    'db_host' => 'Hôte de la base de données',
+    'db_port' => 'Port',
+    'db_name' => 'Nom de la base de données',
+    'db_username' => 'Nom d\'utilisateur',
+    'db_password' => 'Mot de passe',
+    'test_connection' => 'Tester la connexion',
+    'connection_success' => 'Connexion réussie',
+    'connection_failed' => 'Échec de la connexion',
+    'testing' => 'Test en cours',
+    'fill_required_fields' => 'Veuillez remplir tous les champs obligatoires',
+    'ajax_error' => 'Impossible de se connecter au serveur',
+    
+    // Step 4 - Admin account
+    'admin_account' => 'Compte administrateur',
+    'project_url' => 'URL du projet',
+    'admin_email' => 'Email administrateur',
+    'admin_password' => 'Mot de passe',
+    'confirm_password' => 'Confirmer le mot de passe',
+    'passwords_not_match' => 'Les mots de passe ne correspondent pas',
+    'save' => 'Enregistrer',
+    'saving' => 'Enregistrement',
+    'admin_saved' => 'Compte administrateur enregistré avec succès !',
+    'all_fields_required' => 'Tous les champs sont obligatoires',
+    'save_failed' => 'Impossible de sauvegarder les informations',
+    'unknown_error' => 'Une erreur est survenue',
+    
+    // Step 5 - Installation
+    'installation_summary' => 'Résumé de l\'installation',
+    'start_installation' => 'Lancer l\'installation',
+    'installation_progress' => 'Progression de l\'installation',
+    'license_check' => 'Vérification de la licence',
+    'project_detection_check' => 'Détection du projet',
+    'env_creation_check' => 'Création du fichier .env',
+    'vendor_check' => 'Vérification du répertoire vendor',
+    'database_check' => 'Configuration de la base de données',
+    'admin_setup_check' => 'Configuration du compte administrateur',
+    'installation_complete' => 'Installation terminée avec succès !',
+    'go_to_login' => 'Aller à la page de connexion',
+    'installing' => 'Installation en cours',
+    'retry' => 'Réessayer',
+    'installation_failed' => 'L\'installation a échoué',
+    
+    // General
+    'error' => 'Erreur',
+    'success' => 'Succès',
+    'warning' => 'Avertissement',
+    'info' => 'Information',
+    'return' => 'Retour',
+];

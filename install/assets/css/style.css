@@ -1,0 +1,175 @@
+/* Installation Wizard Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Language Switcher */
+.language-switcher {
+    margin-bottom: 20px;
+}
+
+.language-switcher a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #6c757d;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.language-switcher a:hover,
+.language-switcher a.active {
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Step Indicators */
+.step-indicators {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.step-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.step-circle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 20px;
+    height: 2px;
+    background-color: #e9ecef;
+    transform: translateY(-50%);
+}
+
+.step-circle:last-child::after {
+    display: none;
+}
+
+.step-circle.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.step-circle.completed {
+    background-color: #198754;
+    color: white;
+}
+
+.step-circle.completed::after {
+    background-color: #198754;
+}
+
+/* Step Content */
+.step-content {
+    padding: 20px;
+}
+
+.step-content h2 {
+    margin-bottom: 20px;
+    color: #343a40;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Installation Progress Cards */
+.installation-progress .card {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.installation-progress .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.installation-progress .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .step-circle {
+        width: 35px;
+        height: 35px;
+        margin: 0 5px;
+        font-size: 0.9rem;
+    }
+    
+    .step-circle::after {
+        width: 10px;
+    }
+    
+    .language-switcher a {
+        margin: 0 2px;
+        padding: 3px 6px;
+        font-size: 0.9rem;
+    }
+}
