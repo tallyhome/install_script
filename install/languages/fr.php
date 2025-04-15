@@ -88,6 +88,16 @@ return [
     'installing' => 'Installation en cours',
     'retry' => 'Réessayer',
     'installation_failed' => 'L\'installation a échoué',
+    'installation_logs' => 'Logs d\'installation',
+    'starting_installation' => 'Démarrage du processus d\'installation...',
+    'detected_project_type' => 'Type de projet détecté :',
+    'vendor_installation' => 'Installation des dépendances vendor',
+    'database_migrations' => 'Migrations de la base de données',
+    'database_seeders' => 'Seeders de la base de données',
+    'installation_success' => 'Installation terminée avec succès !',
+    'ajax_error' => 'Erreur AJAX :',
+    'server_message' => 'Message du serveur :',
+    'response_parse_error' => 'Impossible d\'analyser la réponse du serveur :',
     
     // General
     'error' => 'Erreur',
